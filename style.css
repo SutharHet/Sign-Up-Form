@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+}
+body{
+  font-family: "roboto", sans-serif;
+}
+#navbar{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 3px;
+  position: fixed;
+}
+.text{
+  height: 40px;
+  font-size: 13px;
+  line-height: 9px;
+  margin: 3px;
+}
+.text p{
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+}
+.icons{
+  height: 25px;
+}
+.sign-in-btn{
+  margin-right: 10px;
+}
+.sign-in-btn button{
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #1261A0;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*main logo*/
+.logo{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  height: 400px;
+}
