@@ -2,29 +2,36 @@
 *::before,
 *::after{
   margin: 0;
+  padding: 0;
 }
 body{
   font-family: "roboto", sans-serif;
+  background-color: #ECEEF1;
 }
 #navbar{
-  width: 100%;
+  width: 99%;
   height: 40px;
   display: flex;
   justify-content: flex-end;
-  margin: 3px;
-  position: fixed;
+  position: absolute;
+  padding-top: 20px;
+  z-index: 2;
 }
 .text{
-  height: 40px;
+  height: 35px;
   font-size: 13px;
   line-height: 9px;
   margin: 3px;
 }
-.text p{
-  margin-bottom: 10px;
+.text p:first-child{
+  margin-bottom: 5px;
 }
 a{
   text-decoration: none;
+  color: #0077C5;
+}
+a:hover{
+  text-decoration: underline;
 }
 .icons{
   height: 25px;
@@ -36,7 +43,7 @@ a{
   width: 120px;
   height: 35px;
   cursor: pointer;
-  background-color: #1261A0;
+  background-color: #0077C5;
   color: white;
   border-radius: 3px;
   border: none;
@@ -47,13 +54,111 @@ a{
 }
 
 /*main logo*/
-.logo{
+main{
+  position: absolute;
+  margin-top: 40px;
   width: 100%;
-  height: 400px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+.logo{
+  width: 520px;
+  height: 400px;
+  margin: -80px auto;
 }
 .logo img{
   height: 400px;
+}
+
+.form-container{
+  background-color: #fff;
+  width: 350px;
+  height: 600px;
+  margin: -50px auto;
+  border: 1px solid #c7c7c7;
+}
+.form-header{
+  padding: 20px;
+}
+.form-body{
+  padding: 20px;
+}
+.form-header h2{
+  font-weight: normal;
+  text-align: center;
+  margin: 10px auto;
+}
+.form-container p{
+  text-align: center;
+  color: #393A3D;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.form-content .input{
+  height: 34px;
+  width: 100%;
+}
+label span{
+  font-size: 12px;
+}
+label{
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.form-content p{
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+.form-content{
+  margin-top: 20px;
+}
+.form-content button{
+  width: 100%;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  padding: 6px 12px;
+  background-color: #0077C5;
+  border: none;
+  cursor: pointer;
+}
+
+.form-footer{
+  margin-bottom: 0;
+  background-color: #ECEEF1;
+  width: 100%;
+  height: 50px;
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+}
+.form-footer p{
+  font-size: 11px;
+  text-align: center;
+}
+.copyright{
+  width: 60%;
+  text-align: center;
+  margin: 70px auto;
+  color: #505050;
+  font-size: 12px;
+}
+footer{
+  position: absolute;
+  margin-top: 950px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer a{
+  margin-left: 30px;
+  font-size: 13px;
 }
